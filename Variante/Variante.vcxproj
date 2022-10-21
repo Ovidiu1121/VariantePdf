@@ -141,6 +141,12 @@
   <ItemGroup>
     <ClCompile Include="Variante.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="varianta1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="in.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
