@@ -42,6 +42,14 @@ void numereDivizibile(int v[], int d, int n) {
 
 }
 
+void solutie1() {
+
+	int v[100], d;
+
+	citire(v, d);
+	numereDivizibile(v, d,10);
+
+}
 
 /*Subprogramul sub, cu trei parametri, primeşte prin intermediul parametrilor:
 – v un tablou unidimensional cu cel mult 100 de componente ce memorează numere
@@ -67,6 +75,15 @@ int contorNrMaiMici(int v[], int d, int a) {
 	return ct;
 }
 
+void solutie2() {
+
+	int v[100], d;
+
+	citire(v, d);
+	contorNrMaiMici(v, d, 20);
+
+}
+
 /* Să se scrie un program C/C++ care să citească de la tastatură un număr natural nenul n
 (n≤100) şi n numere întregi, fiecare având cel mult 4 cifre, şi care, folosind apeluri utile ale
 subprogramului sub, să afişeze pe ecran mesajul DA dacă oricare două dintre cele n
@@ -89,7 +106,14 @@ void numereDistincte(int v[], int d) {
 	cout << "Da";
 }
 
+void solutie3() {
 
+	int v[100], d;
+
+	citire(v, d);
+	numereDistincte(v, d);
+
+}
 
 
 
