@@ -23,6 +23,12 @@
     <ClInclude Include="varianta1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="varianta2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
