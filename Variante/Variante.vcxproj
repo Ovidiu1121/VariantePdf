@@ -145,6 +145,8 @@
     <ClInclude Include="varianta1.h" />
     <ClInclude Include="varianta2.h" />
     <ClInclude Include="varianta3.h" />
+    <ClInclude Include="varianta4.h" />
+    <ClInclude Include="varianta5.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt" />
