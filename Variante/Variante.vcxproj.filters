@@ -35,6 +35,21 @@
     <ClInclude Include="varianta5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="varianta6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
