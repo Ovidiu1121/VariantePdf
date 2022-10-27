@@ -1,11 +1,11 @@
 
 
-#include "varianta10.h"
+#include "varianta12.h"
 
 int main()
 {
 
-	solutie27();
+	solutie33();
 
 
 }
