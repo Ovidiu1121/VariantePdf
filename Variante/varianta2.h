@@ -29,7 +29,7 @@ void numereNatNenule(int v[], int d) {
 
 }
 
-void solutie4() {
+void ex3Var2() {
 
 	int v[100], d;
 
@@ -49,8 +49,7 @@ Exemplu: pentru a=90 subprogramul va returna valoarea 4, deoarece a=2*32*5 şi
 1+2+1=4.*/
 
 
-
-void Xsolutie5() {
+void ex4aVar2() {
 
 	int v[100], d;
 
@@ -123,7 +122,7 @@ bool numarExtraPrim(int n) {
 	return true;
 }
 
-void solutie6() {
+void ex4bVar2() {
 
 	cout << numarExtraPrim(1132);
 

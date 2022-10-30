@@ -23,19 +23,17 @@ bool patratPerfect(int n) {
 }
 
 void mediePatratePerf(int v[], int d) {
-
 	int s = 0;
-
 	for (int i = 0; i < d; i++) {
 		if (patratPerfect(v[i]) == 1) {
 			cout << v[i] << "+";
-			s += v[i];
+			s+=v[i];
 		}
 	}
 	cout << "=" << s;
 }
 
-void solutie22() {
+void ex3VarVar8() {
 
 	int v[100], d;
 
@@ -67,7 +65,7 @@ void sortareDescrescator(int v[], int d) {
 
 	for (int i = 0; i < d-1; i++) {
 		for (int j = i + 1; j < d; j++) {
-			if (v[i] > v[j]) {
+			if (v[i] < v[j]) {
 				int aux = v[i];
 				v[i] = v[j];
 				v[j] = aux;
@@ -113,7 +111,7 @@ void vectoriCombinati(int v[], int d, int a[], int b) {
 
 }
 
-void solutie23() {
+void ex4Var8() {
 
 	int v[5] = { 2,4,8,10,14 }, a[3] = { 3,5,11 };
 

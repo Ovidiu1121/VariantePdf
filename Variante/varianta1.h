@@ -42,7 +42,7 @@ void numereDivizibile(int v[], int d, int n) {
 
 }
 
-void solutie1() {
+void ex3Var1() {
 
 	int v[100], d;
 
@@ -75,7 +75,7 @@ int contorNrMaiMici(int v[], int d, int a) {
 	return ct;
 }
 
-void solutie2() {
+void ex4aVar1() {
 
 	int v[100], d;
 
@@ -106,7 +106,7 @@ void numereDistincte(int v[], int d) {
 	cout << "Da";
 }
 
-void solutie3() {
+void ex4bVar1() {
 
 	int v[100], d;
 

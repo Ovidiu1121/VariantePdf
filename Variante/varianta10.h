@@ -21,7 +21,7 @@ void numerePrime(int n) {
 
 }
 
-void solutie27() {
+void ex3Var10() {
 
 	numerePrime(20);
 
@@ -50,7 +50,7 @@ programul va afişa perechile următoare, nu neapărat în această ordine:
 3 5 
 */
 
-void Xsolutie28() {
+void ex4Var10() {
 
 
 

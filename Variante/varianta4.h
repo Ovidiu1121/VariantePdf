@@ -68,7 +68,7 @@ void afisareStiva(Node* pr)
 
 }
 
-void solutie10() {
+void ex3Subiect2Var4() {
 
     citireStiva(pr);
     ad(pr, ul, 4);
@@ -123,7 +123,7 @@ void matrice1(int n) {
 
 }
 
-void solutie11() {
+void ex4Subiect2Var4() {
 
     matrice1(4);
 
@@ -145,7 +145,7 @@ void ordineDescrescatoare(int v[], int d) {
 
 }
 
-void solutie12() {
+void ex3Subiect3Var4() {
 
     int v[100], d;
 

@@ -15,7 +15,7 @@ void sortareCrescator(int v[], int d) {
 
 	for (int i = 0; i < d - 1; i++) {
 		for (int j = i + 1; j < d; j++) {
-			if (v[i] < v[j]) {
+			if (v[i] > v[j]) {
 				int aux = v[i];
 				v[i] = v[j];
 				v[j] = aux;
@@ -49,7 +49,7 @@ void numereDivizibile(int v[], int d, int a[], int b) {
 	}
 }
 
-void solutie32() {
+void ex3Var12() {
 
 	int v[7] = { 1,2,3,4,7,20,60 }, d = 7;
 	int a[9] = { 3,5,7,8,9,19,12,20,24 }, b = 9;
@@ -87,7 +87,7 @@ void cifreEgaleVec(int v[], int d) {
 
 }
 
-void solutie33() {
+void ex4Var12() {
 
 	int v[100], d;
 

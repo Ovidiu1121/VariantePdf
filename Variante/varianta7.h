@@ -14,7 +14,7 @@ interschimbate, nu există, programul nu va efectua nici o modificare asupra tab
 Exemplu: pentru n=3 şi v=(1 2 3 4 5 6 7 8 9), fişierul BAC.TXT va conţine:
 1 9 3 4 5 6 7 8 2*/
 
-void Xsolutie19() {
+void ex3Var7() {
 
 	int v[100], d;
 
@@ -41,7 +41,7 @@ int f(int n) {
 
 }
 
-void solutie20() {
+void ex4aVar7() {
 
 	cout << f(83);
 
@@ -54,7 +54,7 @@ separate prin câte un spaţiu. i
 Exemplu: dacă valoarea citită de la tastatură este 63, se va afişa:
 40 20 3*/
 
-void xsolutie21() {
+void ex4bVar7() {
 
 
 

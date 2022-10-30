@@ -36,7 +36,7 @@ void sume(int v[], int d) {
 
 }
 
-void solutie17() {
+void ex3Var6() {
 
 	int v[100], d;
 
@@ -97,7 +97,7 @@ void nrAparitii(int v[], int d) {
 
 }
 
-void solutie18() {
+void ex4Var6() {
 
 	int v[100], d;
 

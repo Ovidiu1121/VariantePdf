@@ -29,7 +29,7 @@ void minim3cifre(int v[], int d) {
 
 }
 
-void solutie7() {
+void ex3Var3() {
 
 	int v[100], d;
 
@@ -55,7 +55,7 @@ int aparitiiCifra(int n, int c) {
 	return ct;
 }
 
-void solutie8() {
+void ex4aVar3() {
 
 	cout << aparitiiCifra(125854, 5);
 
@@ -71,7 +71,7 @@ Exemplu: dacã n=21523531 atunci se va afiºa pe ecran numãrul 53211235, iar dacã
 n=12272351 atunci se va afiºa pe ecran numãrul 0.*/
 
 
-void Xsolutie9() {
+void ex4bVar3() {
 
 
 

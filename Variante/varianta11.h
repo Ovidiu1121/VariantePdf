@@ -25,7 +25,7 @@ void inlocuire(int v[], int d) {
 
 }
 
-void solutie29() {
+void ex3Var11() {
 
 	int v[100], d;
 
@@ -51,7 +51,7 @@ int sumaDiv(int n) {
 	return s;
 }
 
-void solutie30() {
+void ex4aVar11() {
 
 	cout << sumaDiv(6);
 
@@ -75,7 +75,7 @@ int contorPrime(int v[], int d) {
 	return ct;
 }
 
-void solutie31() {
+void ex4bVa11() {
 
 	int v[100], d;
 

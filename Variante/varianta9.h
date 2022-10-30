@@ -66,7 +66,7 @@ void chenarExterior(int a[100][100], int n, int m) {
 
 }
 
-void solutie24() {
+void ex5Subiect2Var9() {
 
     int a[100][100], n, m;
 
@@ -100,7 +100,7 @@ void primeleKNumere(int n, int k) {
 
 }
 
-void solutie25() {
+void ex3Subiect3Var9() {
 
     primeleKNumere(3, 5);
 
@@ -133,7 +133,7 @@ void celeMaiMariNumere(int v[], int d) {
 
 }
 
-void solutie26() {
+void ex4Subiect3Var9() {
 
     int v[100], d;
 

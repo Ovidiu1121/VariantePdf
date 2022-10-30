@@ -37,7 +37,7 @@ void matrice2(int n, int m) {
 
 }
 
-void solutie13() {
+void ex5Subiect2Var5() {
 
 	matrice2(4,5);
 
@@ -61,7 +61,7 @@ void prefixe(int n) {
 
 }
 
-void solutie14() {
+void ex3Subiect3Var5() {
 
 	prefixe(10305);
 
@@ -83,7 +83,7 @@ int divizorPrimMinim(int n) {
 	return -1;
 }
 
-void solutie15() {
+void ex4aSubiect3Var5() {
 
 	cout << divizorPrimMinim(45);
 
@@ -108,7 +108,7 @@ void numerePrime(int v[], int d) {
 
 }
 
-void solutie16() {
+void ex4bSubiect3Var5() {
 
 	int v[100], d;
 
