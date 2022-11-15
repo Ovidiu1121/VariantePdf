@@ -166,6 +166,14 @@
     <ClInclude Include="varianta29.h" />
     <ClInclude Include="varianta3.h" />
     <ClInclude Include="varianta30.h" />
+    <ClInclude Include="varianta31.h" />
+    <ClInclude Include="varianta32.h" />
+    <ClInclude Include="varianta33.h" />
+    <ClInclude Include="varianta34.h" />
+    <ClInclude Include="varianta35.h" />
+    <ClInclude Include="varianta36.h" />
+    <ClInclude Include="varianta37.h" />
+    <ClInclude Include="varianta38.h" />
     <ClInclude Include="varianta4.h" />
     <ClInclude Include="varianta5.h" />
     <ClInclude Include="varianta6.h" />
