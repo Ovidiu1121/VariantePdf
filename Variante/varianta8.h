@@ -1,4 +1,67 @@
-﻿#include "varianta7.h"
+﻿#include "citire_afisare.h"
+
+/*Utilizând metoda backtracking sunt generate numerele de 3 cifre care au cifrele în ordine
+crescătoare, iar cifrele aflate pe poziţii consecutive sunt de paritate diferită. Ştiind că primele
+cinci soluţii generate sunt, în această ordine, 123, 125, 127, 129, 145, care este cel de al
+8-lea număr generat?*/
+
+int s[100], n = 9, m = 3;
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < m; i++) {
+		cout << s[i] << " ";
+	}
+
+}
+
+int valid(int k) {
+
+	for (int i = 0; i < k; i++) {
+		if (s[k] <= s[i]) {
+			return 0;
+		}
+	}
+	for (int i = 0; i < k; i++) {
+		if (s[i] % 2 == 0 && s[i + 1] % 2 == 0 || s[i] % 2 == 1 && s[i + 1] % 2 == 1) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = 1; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var8() {
+
+	back(0);
+
+}
 
 
 /*Pe prima linie a fişierului text BAC.TXT se află o valoare naturală n (1<n≤50), iar pe a doua
@@ -119,13 +182,56 @@ void ex4Var8() {
 
 }
 
+//s2
 
+/*Scrieţi un program C/C++ care citeşte de la tastatură două numere naturale n şi p
+(2≤n≤20, 1≤p≤20) şi construieşte în memorie un tablou bidimensional cu n linii şi p
+coloane. Tabloul va fi construit astfel încât, parcurgând tabloul linie cu linie de sus în jos şi
+fiecare linie de la stânga la dreapta, să se obţină şirul primelor n*p pătrate perfecte
+impare, ordonat strict crescător, ca în exemplu. Tabloul astfel construit va fi afişat pe
+ecran, fiecare linie a tabloului pe câte o linie a ecranului, cu câte un spaţiu între elementele
+fiecărei linii.
+Exemplu: pentru n=2, p=3 se va afişa tabloul alăturat:
+1 9 25
+49 81 121*/
 
+int urmatorulPatratPerfect(int n) {
 
+	for (int i = n + 1; i < n+100; i++) {
+		if (patratPerfect(i)) {
+			return i;
+		}
+	}
+	return -1;
+}
 
+void primelePPImpare(int n, int m) {
 
+	int a[100][100];
+	a[0][0] = 1;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (i != 0 && j != 0) {
+				int k = urmatorulPatratPerfect(a[i][j - 1]);
+				a[i][j] = k;
+			}
+		}
+	}
 
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
 
+}
+
+void ex5Var8() {
+
+	primelePPImpare(2, 3);
+
+}
 
 
 

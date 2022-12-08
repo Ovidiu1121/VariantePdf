@@ -1,5 +1,74 @@
-﻿#include "varianta5.h"
+﻿#include "citire_afisare.h"
 
+
+/*Utilizând metoda backtracking sunt generate numerele de 3 cifre, având toate cifrele
+distincte şi cu proprietatea că cifrele aflate pe poziţii consecutive sunt de paritate diferită.
+Ştiind că primele şase soluţii generate sunt, în această ordine, 103, 105, 107, 109, 123,
+125, care este a zecea soluţie generată?*/
+
+
+int s[100], n = 9, m = 3;
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < m; i++) {
+		cout << s[i] << " ";
+	}
+
+}
+
+int valid(int k) {
+
+	if (s[0] == 0) {
+		return 0;
+	}
+
+	for (int i = 1; i <= k; i++) {
+		if (s[i - 1] % 2 == 0 && s[i] % 2 == 0 || s[i - 1] % 2 == 1 && s[i] % 2 == 1) {
+			return 0;
+		}
+	}
+
+	for (int i = 0; i < k; i++) {
+		if (s[i] == s[k]) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back2(int k) {
+
+	for (int i = 0; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back2(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var6() {
+
+	back2(0);
+
+}
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (n≤100) şi apoi
 cele n elemente, numere naturale cu cel mult 4 cifre fiecare, ale unui tablou unidimensional

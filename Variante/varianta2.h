@@ -1,4 +1,4 @@
-﻿#include "varianta1.h"
+﻿#include "citire_afisare.h"
 
 /*Fişierul text NR.TXT conţine pe o singură linie, separate prin câte un spaţiu, cel mult 100 de
 numere întregi, fiecare număr având cel mult 4 cifre. Scrieţi un program C/C++ care citeşte

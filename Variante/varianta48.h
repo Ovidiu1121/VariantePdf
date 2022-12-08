@@ -94,7 +94,6 @@ void ex4Var48() {
 
 	citire(v, d);
 	aparitii(v, d);
-
 }
 
 

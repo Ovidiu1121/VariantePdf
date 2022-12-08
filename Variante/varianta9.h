@@ -1,4 +1,4 @@
-﻿#include "varianta8.h"
+﻿#include "citire_afisare.h"
 
 
 /*Se consideră tabloul bidimensional cu n linii şi n coloane ce conţine numere naturale cu cel
@@ -76,6 +76,88 @@ void ex5Subiect2Var9() {
 
 }
 
+/*Utilizând metoda backtracking, sunt generate n ordine crescătoare toate numerele de 3
+cifre, astfel încât cifrele sunt în ordine crescătoare, iar cifrele aflate pe poziţii consecutive
+sunt de paritate diferită. Ştiind că primele trei soluţii generate sunt, în această ordine, 123,
+125, 127, scrieţi toate numerele generate care au suma cifrelor egală cu 12.*/
+
+int s[100], n = 9, m = 3;
+
+void tipar() {
+    cout << endl;
+    for (int i = 0; i < m; i++) {
+        cout << s[i] << " ";
+    }
+
+}
+
+int sumaCifre(int n) {
+
+    int s = 0;
+
+    while (n) {
+        s += n % 10;
+        n /= 10;
+    }
+    return s;
+}
+
+int valid(int k) {
+    int suma = 0;
+    for (int i = 0; i < k; i++) {
+        if (s[k] <= s[i]) {
+            return 0;
+        }
+    }
+    for (int i = 0; i < k; i++) {
+        if (s[i] % 2 == 0 && s[i + 1] % 2 == 0 || s[i] % 2 == 1 && s[i + 1] % 2 == 1) {
+            return 0;
+        }
+    }
+
+    for (int i = 0; i < k; i++) {
+        suma += s[i];
+    }
+    if (suma != 12) {
+        return 0;
+    }
+    return 1;
+}
+
+int solutie(int k) {
+
+    if (k == m - 1) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+
+}
+
+void back(int k) {
+
+    for (int i = 1; i <= n; i++) {
+        s[k] = i;
+        if (valid(k)) {
+            if (solutie(k)) {
+                tipar();
+            }
+            else {
+                back(k + 1);
+            }
+        }
+    }
+
+}
+
+void ex2Var9() {
+
+    back(0);
+
+}
+
+
 /*Scrieţi definiţia completă a subprogramului sub cu doi parametri: n (număr natural,
 0<n≤50) şi k (număr natural, 0<k≤20). Subprogramul determină afişarea pe o linie nouă a
 ecranului, în ordine descrescătoare, a primelor n numere naturale nenule divizibile cu k.
@@ -117,6 +199,16 @@ Exemplu: dacă fişierul BAC.TXT conţine numerele:
 12 2345 123 67 989 6 999 123 67 989 999
 atunci programul va afişa
 998 997*/
+
+bool nrGasit(int v[], int d, int n) {
+
+    for (int i = 0; i < d; i++) {
+        if (v[i] == n) {
+            return true;
+        }
+    }
+    return false;
+}
 
 void celeMaiMariNumere(int v[], int d) {
     int ct = 0;

@@ -1,4 +1,4 @@
-#include "varianta2.h"
+#include "citire_afisare.h"
 
 
 /*Fiºierului text NR.TXT conþine pe o singurã linie, separate prin câte un singur spaþiu, cel
@@ -77,9 +77,43 @@ void ex4bVar3() {
 
 }
 
+//s2
 
+/*
+0 3 2 1
+4 0 2 1
+4 3 0 1
+4 3 2 0 */
 
+void matrice2(int n) {
 
+	int a[100][100];
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (i == j) {
+				a[i][j] = 0;
+			}
+			else {
+				a[i][j] = n - j;
+			}
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var3() {
+
+	matrice2(4);
+
+}
 
 
 

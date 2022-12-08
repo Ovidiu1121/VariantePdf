@@ -115,9 +115,43 @@ void ex4bVar1() {
 
 }
 
+//s2
 
+/*
+1 1 1 1 1
+1 2 2 2 2
+1 2 3 3 3
+1 2 3 4 4 */
 
+void matrice1(int n, int m) {
 
+	int a[100][100];
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= m; j++) {
+			if (i > j) {
+				a[i][j] = j;
+			}
+			else {
+				a[i][j] = i;
+			}
+		}
+	}
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= m; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var1() {
+	
+	matrice1(4, 5);
+
+}
 
 
 

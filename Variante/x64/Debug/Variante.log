@@ -1,4 +1,2 @@
 ﻿  Variante.cpp
-C:\Data\c++\Varinte\Variante\Variante\varianta30.h(62,41): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Data\c++\Varinte\Variante\Variante\varianta44.h(12,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Variante.vcxproj -> C:\Data\c++\Varinte\Variante\x64\Debug\Variante.exe

@@ -1,6 +1,70 @@
-﻿#include "varianta6.h"
+﻿#include "citire_afisare.h"
 
+/*Folosind tehnica bactracking un elev a scris un program care generează toate numerele de
+câte n cifre (0<n≤9), cifrele fiind în ordine strict crescătoare. Dacăn este egal cu 5, scrieți
+în ordine crescătoare toate numerele având cifra unităților 6, care vor fi generate de
+program.*/
 
+int s[100], n = 9, m = 5;
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < m; i++) {
+		cout << s[i] << " ";
+	}
+
+}
+
+int valid(int k) {
+
+	if (k == m - 1) {
+		if (s[k] != 6) {
+			return 0;
+		}
+	}
+
+	for (int i = 0; i < k; i++) {
+		if (s[k] <= s[i]) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	int val;
+
+	for (val = 1; val <= n; val++) {
+		s[k] = val;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex2Var7() {
+
+	back(0);
+
+}
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (0<n≤100)şi cele
 3*n elemente ale tabloului unidimensional v, fiecare element fiind un număr natural cu cel
