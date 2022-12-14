@@ -1,5 +1,51 @@
-﻿#include "varianta13.h"
+﻿#include "citire_afisare.h"
 
+//s2
+
+/*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural nenul, cu maximum
+8 cifre, construieşte în memorie şi afişează apoi pe ecran o matrice pătratică, având
+numărul de linii şi de coloane egal cu numărul de cifre ale numărului dat, completată cu
+cifrele numărului citit.
+Astfel, elementele de pe prima coloană a matricei vor fi toate egale cu
+cifra unităţilor numărului dat, elementele de pe a doua coloană a
+matricei vor fi toate egale cu cifra zecilor numărului dat, şi aşa mai
+departe, ca în exemplu.
+Exemplu: dacă se citeşte numărul 1359, matricea construită va fi cea
+alăturată.*/
+
+void matrice(int n) {
+
+	int v[100], d = 0;
+	int ct = 0;
+
+	while (n) {
+		v[d] = n % 10;
+		d++;
+		n /= 10;
+	}
+
+	int a[100][100];
+
+	for (int i = 0; i < d; i++) {
+		for (int j = 0; j < d; j++) {
+			a[i][j] = v[j];
+		}
+	}
+
+	for (int i = 0; i < d; i++) {
+		for (int j = 0; j < d; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var14() {
+
+	matrice(1359);
+
+}
 
 /*Se citeşte de la tastatură un număr natural n (n≤500) şi apoi n cifre separate prin spaţii. Se
 cere să se afişeze pe ecran cele n cifre citite, în ordine crescătoare, separate prin câte un
@@ -9,6 +55,20 @@ afişa pe ecran 0 0 1 1 1 1 2 2 2 2 3 3 3 3 3 5 7 7 9.
 a) Descrieţi pe scurt un algoritm de rezolvare al problemei, eficient din punct de vedere al
 spaţiului de memorie utilizat şi al timpului de executare, explicând în ce constă eficienţa
 metodei alese.*/
+
+void sortareCrescator(int v[], int d) {
+
+	for (int i = 0; i < d - 1; i++) {
+		for (int j = i + 1; j < d; j++) {
+			if (v[i] > v[j]) {
+				int aux = v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			}
+		}
+	}
+
+}
 
 void ex3Var14() {
 

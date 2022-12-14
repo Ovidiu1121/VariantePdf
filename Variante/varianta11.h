@@ -1,16 +1,76 @@
-#include "varianta10.h"
+ï»¿#include "citire_afisare.h"
 
 
-/*Fiºierul text numere.txt conþine pe prima linie un numãr natural n (n<30000), iar pe a
-doua linie n numere întregi având maximum 4 cifre fiecare. Se cere sã se afiºeze pe ecran
-un ºir de n numere întregi, cu proprietatea cã valoarea termenului de pe poziþia i
-(i=1,2,…,n) din acest ºir este egalã cu cea mai mare dintre primele i valori de pe a doua
-linie a fiºierului numere.txt.
-Exemplu: dacã fiºierul numere.txt are conþinutul
-alãturat,
+/*1. Un algoritm de tip backtracking genereazÄƒ, Ã®n ordine lexicograficÄƒ, toate ÅŸirurile de 5 cifre 0
+ÅŸi 1 cu proprietatea cÄƒ nu existÄƒ mai mult de douÄƒ cifre 0 pe poziÅ£ii consecutive. Primele 7
+soluÅ£ii generate sunt: 00100, 00101, 00110, 00111, 01001, 01010, 01011. Care este a
+8-a soluÅ£ie generatÄƒ de acest algoritm?*/
+
+int s[100], n = 1, m = 5;
+
+void tipar() {
+
+	cout << endl;
+
+	for (int i = 0; i < m; i++) {
+		cout << s[i];
+	}
+
+}
+
+int valid(int k) {
+
+	for (int i = 1; i <= k; i++) {
+		if (s[i - 1] == 0 && s[i] == 0 && s[i + 1] == 0) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = 0; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var11() {
+
+	back(0);
+
+}
+
+/*FiÅŸierul text numere.txt conÅ£ine pe prima linie un numÄƒr natural n (n<30000), iar pe a
+doua linie n numere Ã®ntregi avÃ¢nd maximum 4 cifre fiecare. Se cere sÄƒ se afiÅŸeze pe ecran
+un ÅŸir de n numere Ã®ntregi, cu proprietatea cÄƒ valoarea termenului de pe poziÅ£ia i
+(i=1,2,â€¦,n) din acest ÅŸir este egalÄƒ cu cea mai mare dintre primele i valori de pe a doua
+linie a fiÅŸierului numere.txt.
+Exemplu: dacÄƒ fiÅŸierul numere.txt are conÅ£inutul
+alÄƒturat,
 12
 4 6 3 7 8 1 6 2 7 9 10 8
-se afiºeazã pe ecran numerele
+se afiÅŸeazÄƒ pe ecran numerele
 4 6 6 7 8 8 8 8 8 9 10 10 */
 
 void inlocuire(int v[], int d) {
@@ -35,8 +95,8 @@ void ex3Var11() {
 
 }
 
-/*Scrieþi doar antetul funcþiei sum care primeºte ca parametru un numãr natural nenul x cu
-maximum 9 cifre ºi returneazã suma divizorilor numãrului x.
+/*ScrieÅ£i doar antetul funcÅ£iei sum care primeÅŸte ca parametru un numÄƒr natural nenul x cu
+maximum 9 cifre ÅŸi returneazÄƒ suma divizorilor numÄƒrului x.
 Exemplu: sum(6) are valoarea 12 (=1+2+3+6).*/
 
 int sumaDiv(int n) {
@@ -57,11 +117,25 @@ void ex4aVar11() {
 
 }
 
-/*Sã se scrie un program C/C++ care citeºte de la tastaturã un numãr natural n (0<n<25) ºi
-apoi n numere naturale nenule cu maximum 9 cifre fiecare. Programul calculeazã, folosind
-apeluri ale funcþiei sum, ºi afiºeazã pe ecran câte numere prime conþine ºirul citit.
-Exemplu: pentru n=5 ºi valorile 12 3 9 7 1 se va afiºa pe ecran valoarea 2 (în ºirul dat
-existã douã numere prime ºi anume 3 ºi 7).*/
+/*SÄƒ se scrie un program C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n (0<n<25) ÅŸi
+apoi n numere naturale nenule cu maximum 9 cifre fiecare. Programul calculeazÄƒ, folosind
+apeluri ale funcÅ£iei sum, ÅŸi afiÅŸeazÄƒ pe ecran cÃ¢te numere prime conÅ£ine ÅŸirul citit.
+Exemplu: pentru n=5 ÅŸi valorile 12 3 9 7 1 se va afiÅŸa pe ecran valoarea 2 (Ã®n ÅŸirul dat
+existÄƒ douÄƒ numere prime ÅŸi anume 3 ÅŸi 7).*/
+
+bool prim(int n) {
+
+	if (n == 0 || n == 1) {
+		return false;
+	}
+
+	for (int i = 2; i <= n / 2; i++) {
+		if (n % i == 0) {
+			return false;
+		}
+	}
+	return true;
+}
 
 int contorPrime(int v[], int d) {
 
@@ -84,12 +158,56 @@ void ex4bVa11() {
 
 }
 
+//s2
 
+/*ScrieÅ£i un program C/C++ care citeÅŸte de la tastaturÄƒ douÄƒ valori naturale nenule m ÅŸi n
+(mâ‰¤10, nâ‰¤10) ÅŸi apoi m*n numere naturale nenule cu cel mult 4 cifre fiecare, reprezentÃ¢nd
+elementele unei matrice cu m linii ÅŸi n coloane. Programul determinÄƒ apoi valorile minime de
+pe fiecare linie a matricei ÅŸi afiÅŸeazÄƒ pe ecran cea mai mare valoare dintre aceste minime.
+Exemplu: pentru m=3, n=5 ÅŸi matricea
+5 13 7 2 3
+9 6 12 9 10
+3 6 5 4 7
+, se afiÅŸeazÄƒ pe ecran valoarea 6*/
 
+int minimLinie(int a[100][100], int n, int l) {
+	int minim = 10000;
+	for (int i = 0; i < n; i++) {
+		if (a[l][i] < minim) {
+			minim = a[l][i];
+		}
+	}
+	return minim;
+}
 
+int maximLinii(int a[100][100], int n, int m) {
 
+	int v[100], d = 0;
 
+	for (int i = 0; i < n; i++) {
+		int k = minimLinie(a, n, i);
+		v[d] = k;
+		d++;
+	}
 
+	int maxim = 0;
+
+	for (int i = 0; i < d; i++) {
+		if (v[i] > maxim) {
+			maxim = v[i];
+		}
+	}
+	return maxim;
+}
+
+void ex5Var11() {
+
+	int a[100][100], n, m;
+	
+	citireMatrice(a, n, m);
+	afisareMatrice(a, n, m);
+	cout << maximLinii(a, n, m);
+}
 
 
 

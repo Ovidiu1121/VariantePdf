@@ -1,4 +1,59 @@
-﻿#include "varianta12.h"
+﻿#include "citire_afisare.h"
+
+//s2
+
+/*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (2<n<25) şi apoi
+construieşte în memorie o matrice cu n linii şi n coloane, numerotate de la 1 la n, ale cărei
+elemente primesc valori după cum urmează:
+- elementele aflate pe diagonala secundară sunt toate nule;
+- elementele de pe coloana i (1≤i≤n), aflate deasupra diagonalei secundare, au valoarea
+egală cu i;
+- elementele de pe linia n-i+1 (1≤i≤n), aflate sub diagonala secundară, au valoarea egală
+cu i.
+5.
+Programul afişează pe ecran matricea construită, câte o linie a matricei pe
+câte o linie a ecranului, elementele fiecărei linii fiind separate prin câte un
+spaţiu.
+Exemplu: pentru n=4 se va afişa matricea alăturată.
+1 2 3 0
+1 2 0 3
+1 0 2 2
+0 1 1 1*/
+
+void matrice(int n) {
+
+	int a[100][100];
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j <n; j++) {
+			 if (i + j < 3) {
+				a[i][j] = j+1;
+			}
+			else if(i+j>3) {
+				a[i][j] = n - i;
+			 }
+			else {
+				 if (j + i == 3) {
+					 a[i][n - i - 1] = 0;
+				 }
+			 }
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var13() {
+
+	matrice(4);
+
+}
 
 
 /*Se consideră şirul 1, 2,1, 3,2,1, 4,3,2,1, ...

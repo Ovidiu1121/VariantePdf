@@ -1,5 +1,66 @@
-﻿#include "varianta11.h"
+﻿#include "citire_afisare.h"
 
+
+//s2
+
+/*Pentru a scrie valoarea 10 ca sumă de numere prime se foloseşte metoda backtracking şi
+se generează, în această ordine, sumele distincte: 2+2+2+2+2, 2+2+3+3, 2+3+5, 3+7,
+5+5. Folosind exact aceeaşi metodă, se scrie valoarea 9 ca sumă de numere prime. Care
+sunt primele trei soluţii, în ordinea generării lor?*/
+
+int s[100], n = 9, m = 5;
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < m; i++) {
+		cout << s[i] << "+";
+	}
+
+}
+
+int valid(int k) {
+	int suma = 0;
+	for (int i = 0; i < k; i++) {
+		suma += s[i];
+	}
+	if (suma != 9) {
+		return 0;
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = 1; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex2Var12() {
+
+	back(0);
+
+}
 
 
 /*Fişierele text NR1.TXT şi NR2.TXT conţin, separate prin câte un spaţiu, mai multe numere
@@ -23,6 +84,16 @@ void sortareCrescator(int v[], int d) {
 		}
 	}
 
+}
+
+bool nrGasit(int v[], int d, int n) {
+
+	for (int i = 0; i < d; i++) {
+		if (v[i] == n) {
+			return true;
+		}
+	}
+	return false;
 }
 
 void numereDivizibile(int v[], int d, int a[], int b) {
@@ -95,11 +166,6 @@ void ex4Var12() {
 	cifreEgaleVec(v, d);
 
 }
-
-
-
-
-
 
 
 

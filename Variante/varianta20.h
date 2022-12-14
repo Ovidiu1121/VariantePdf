@@ -1,4 +1,70 @@
-#include "varianta19.h"
+#include "citire_afisare.h"
+
+/*Un algoritm genereazã în ordine descrescãtoare, toate numerele de n cifre (n<9), cu cifrele
+în ordine strict crescãtoare, care nu au douã cifre pare alãturate. Dacã pentru n=5, primele
+cinci soluþii generate sunt 56789, 45789, 45679, 45678, 36789, precizaþi care sunt
+urmãtoarele trei soluþii generate, în ordinea obþinerii lor.*/
+
+int s[100], n = 9, m = 5;
+
+void tipar() {
+
+	cout << endl;
+
+	for (int i = 0; i < m; i++) {
+		cout << s[i];
+	}
+
+}
+
+int valid(int k) {
+
+	for (int i = 0; i < k; i++) {
+		if (s[k] <= s[i]) {
+			return 0;
+		}
+	}
+	for (int i = 1; i <= k; i++) {
+		if (s[i] % 2 == 0 && s[i - 1] % 2 == 0 || s[i] % 2 == 0 && s[i + 1] % 2 == 0) {
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = n; i > 0; i--) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex5Var20() {
+
+	back(0);
+
+}
 
 
 /*Subprogramul nule are doi parametri: a, prin care primeºte un tablou unidimensional cu
@@ -53,6 +119,16 @@ nr1.txt nr2.txt
 3 6 8 9 12 2 3 5 7 9 13
 se va afiºa 3 9.*/
 
+bool nrGasit(int v[], int d, int n) {
+
+	for (int i = 0; i < d; i++) {
+		if (v[i] == n) {
+			return true;
+		}
+	}
+	return false;
+}
+
 void nrIncluse(int v[], int d, int a[], int b) {
 
 	for (int i = 0; i < d; i++) {
@@ -62,7 +138,6 @@ void nrIncluse(int v[], int d, int a[], int b) {
 	}
 
 }
-
 
 void ex4Var20() {
 
