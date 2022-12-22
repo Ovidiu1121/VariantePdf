@@ -1,5 +1,67 @@
 #include "citire_afisare.h"
 
+/*Scrieþi un program C/C++ care citeºte de la tastaturã un numãr natural n (2<n<20) ºi
+construieºte în memorie o matrice cu n linii ºi n coloane, numerotate de la 1 la n, în care
+fiecare element aflat pe chenarul exterior al matricei este egal cu suma dintre indicele liniei
+ºi indicele coloanei pe care se aflã, iar fiecare dintre celelalte elemente este egal cu suma
+celor trei “vecini” situaþi în matrice pe linia anterioarã. Douã elemente din matrice se numesc
+vecine dacã se gãsesc alãturi pe linie, coloanã sau diagonalã. Chenarul exterior al unei
+matrice este format din prima linie, ultima linie, prima coloanã ºi ultima coloanã.
+5.
+Elementele matricei vor fi afiºate pe ecran, câte o linie a matricei
+pe câte o linie a ecranului cu câte un spaþiu între elementele
+fiecãrei linii.
+Exemplu: pentru n=5 se va obþine matricea alãturatã. (10p.)
+2 3 4 5 6
+3 9 12 15 7
+4 24 36 34 8
+5 64 94 78 9
+6 7 8 9 10*/
+
+
+void matrice(int n) {
+
+	int a[100][100];
+
+	int i1, j1, i2, j2, k;
+
+	i1 = 0; j1 = 0; i2 = n - 1; j2 = n - 1;
+
+	for (k = j1; k <= j2; k++) {
+		a[i1][k] = k + 2;
+	}
+	for (k = i1 + 1; k <= i2; k++) {
+		a[k][j2] = i2 + k+2;
+	}
+	for (k = j2 - 1; k >= i1; k--) {
+		a[i2][k] = j2 + k+2;
+	}
+	for (k = i2 - 1; k > j1; k--) {
+		a[k][j1] = k + 2;
+	}
+
+	for (int i = 1; i < n-1; i++) {
+		for (int j = 1; j < n-1; j++) {
+			a[i][j] = a[i - 1][j - 1] + a[i - 1][j] + a[i - 1][j + 1];
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var20() {
+
+	matrice(5);
+
+}
+
+
 /*Un algoritm genereazã în ordine descrescãtoare, toate numerele de n cifre (n<9), cu cifrele
 în ordine strict crescãtoare, care nu au douã cifre pare alãturate. Dacã pentru n=5, primele
 cinci soluþii generate sunt 56789, 45789, 45679, 45678, 36789, precizaþi care sunt
@@ -60,7 +122,7 @@ void back(int k) {
 
 }
 
-void ex5Var20() {
+void ex2Var20() {
 
 	back(0);
 

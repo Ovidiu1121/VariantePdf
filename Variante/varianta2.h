@@ -61,19 +61,6 @@ void ex4aVar2() {
 folosind apeluri utile ale subprogramului f, verifică dacă n este un număr extraprim. În caz
 afirmativ, programul afişează pe ecran mesajul DA, în caz contrar afişând mesajul NU.*/
 
-bool prim(int n) {
-
-	if (n == 0 || n == 1) {
-		return false;
-	}
-
-	for (int i = 2; i <= n / 2; i++) {
-		if (n % i == 0) {
-			return false;
-		}
-	}
-	return true;
-}
 
 void permutare(int v[], int d) {
 

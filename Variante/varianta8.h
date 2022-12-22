@@ -124,20 +124,6 @@ bool paritatiDiferite(int a, int b) {
 	return false;
 }
 
-void sortareDescrescator(int v[], int d) {
-
-	for (int i = 0; i < d-1; i++) {
-		for (int j = i + 1; j < d; j++) {
-			if (v[i] < v[j]) {
-				int aux = v[i];
-				v[i] = v[j];
-				v[j] = aux;
-			}
-		}
-	}
-
-}
-
 void stergere(int v[], int& d, int p) {
 
 	for (int i = p; i < d - 1; i++) {

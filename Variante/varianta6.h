@@ -138,16 +138,6 @@ int frecventaNumar(int v[], int d, int n) {
 	return f[n];
 }
 
-bool nrGasit(int v[], int d, int n) {
-
-	for (int i = 0; i < d; i++) {
-		if (v[i] == n) {
-			return true;
-		}
-	}
-	return false;
-}
-
 void nrAparitii(int v[], int d) {
 
 	int a[100], b = 0;

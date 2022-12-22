@@ -1,4 +1,45 @@
-﻿#include "varianta22.h"
+﻿#include "citire_afisare.h"
+
+/*Un tablou bidimensional A cu m linii şi n coloane (1≤m≤100, 1≤n≤100) conţine pe prima linie
+numerele 1,2,...,n, iar pe prima coloană numerele 1,2,...,m. Celelalte elemente ale
+tabloului sunt date de relaţia: Ai,j=Ai-1,j+Ai,j-1. Scrieţi un program C/C++ care citeşte de la
+tastatură numerele m şi n şi afişează pe ecran ultima cifră a elementului de pe ultima linie şi
+ultima coloană a tabloului.
+Exemplu: pentru m=3 şi n=4 se va afişa 5 deoarece elementele
+tabloului A sunt:
+(10p.)
+1 2 3 4
+2 4 7 11
+3 7 14 25*/
+
+void matrice(int n, int m) {
+	int a[100][100];
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (i == 0) {
+				a[i][j] = j+1;
+			}
+			else if (j == 0) {
+				a[i][j] = i+1;
+			}
+			else {
+				a[i][j] = a[i - 1][j] + a[i][j - 1];
+			}
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+
+void ex5Var23() {
+
+	matrice(3, 4);
+}
 
 
 /*Scrieţi definiţia completă a subprogramului shift care primeşte prin intermediul

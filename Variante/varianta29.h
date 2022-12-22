@@ -1,5 +1,44 @@
 ﻿#include "varianta28.h"
 
+//s2
+
+/*Scrieţi un program C/C++ care citeşte de la tastatură un număr
+natural n (1≤n≤6) şi elementele unui tablou bidimensional A cu n linii
+şi n coloane, care memorează numere naturale nenule mai mici decât
+100, şi afişează pe ecran produsul numerelor “pivot” pentru matricea
+A dacă există astfel de numere, altfel va afişa mesajul NU EXISTA.
+Un număr natural x este “pivot” pentru matricea A dacă înmulţind
+fiecare element de pe prima coloană cu numărul x, se obţin, în
+aceeaşi ordine, elementele unei alte coloane din matrice.*/
+
+void matrice(int a[100][100], int n) {
+    int k = 1;
+    for (int i = 1; i < n; i++){
+        bool flag = true;
+        for (int j = 0; j < n; j++){
+            if (a[j][0] * i != a[j][i]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag){
+            k *= i;
+        }
+
+    }
+    cout << k;
+}
+
+void ex5Var29() {
+
+    int a[100][100], n, m;
+
+    citireMatrice(a, n, m);
+    matrice(a, n);
+
+}
+
+//s3
 
 /*Scrieţi definiţia completă a subprogramului multipli, cu trei parametri a,b,c (a≤b),
 numere naturale din intervalul [1,10000] ce returnează numărul numărul multiplilor lui c

@@ -1,4 +1,35 @@
-﻿#include "varianta23.h"
+﻿#include "citire_afisare.h"
+
+//s2
+
+/*Scrieţi o secvenţă de instrucţiuni C/C++ care să iniţializeze elementele unui tablou
+bidimensional A, cu n linii şi n coloane, 1<n≤100, cu numerele naturale 1,2,...,n, astfel
+încât pe fiecare linie sau coloană să existe toate numerele din mulţimea {1,2,...,n}.*/
+
+void matrice(int n) {
+
+	int a[100][100];
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			a[i][j] = i * n + j + 1;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex4S2Var24() {
+
+	matrice(4);
+
+}
 
 
 /*Scrieţi definiţia completă a subprogramului p care primeşte prin intermediul parametrului
@@ -42,6 +73,15 @@ elementelor care ar rămâne în tabloul x dacă s-ar elimina valoarea minimă �
 maximă din tablou. Valoarea afişată va avea cel mult 3 cifre după virgulă.
 Exemplu: dacă se citesc pentru n valoarea 5, iar pentru tabloul x valorile (1,9,4,8,5),
 programul va afişa una dintre valorile 5.667 sau 5.666.*/
+
+void stergere(int v[], int& d, int p) {
+
+	for (int i = p; i < d - 1; i++) {
+		v[i] = v[i + 1];
+	}
+	d--;
+
+}
 
 void eliminareMaxMin(int v[], int &d) {
 
@@ -96,6 +136,17 @@ ei.
 11
 35
 8 15*/
+
+int contorCifre(int n) {
+
+	int ct = 0;
+
+	while (n) {
+		ct++;
+		n /= 10;
+	}
+	return ct;
+}
 
 int numarReal(int v[], int d, int a, int b) {
 

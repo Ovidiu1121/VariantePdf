@@ -1,6 +1,47 @@
-﻿#include "varianta21.h"
+﻿#include "citire_afisare.h"
 
 
+/*Scrieţi un program C/C++ care citeşte de la tastatură numerele naturale m şi n din intervalul
+[1,24], apoi construieşte în memorie şi afişează pe ecran un tablou bidimensional cu m
+linii şi n coloane astfel încât prin parcurgerea acestuia linie cu linie de sus în jos şi fiecare
+linie de la stânga la dreapta, se obţin în ordine descrescătoare toate numerele naturale de
+la 1 la m*n, ca în exemplu.
+5.
+Fiecare linie a tabloului este afişată pe câte o linie a ecranului, elementele
+aceleiaşi linii fiind separate prin câte un spaţiu.
+Exemplu: pentru m=4 şi n=3 se va construi şi afişa tabloul alăturat. (10p.)
+12 11 10
+9 8 7
+6 5 4
+3 2 1*/
+
+void matrice(int n, int m) {
+
+	int a[100][100];
+
+	int k = m * n;
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			a[i][j] = k;
+			k--;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var22() {
+
+	matrice(4,3);
+
+}
 
 /*Scrieţi definiţia completă a unui subprogram, nz, cu un parametru întreg n (0<n≤32000),
 care returnează numărul zerourilor de la sfârşitul numărului n!.*/

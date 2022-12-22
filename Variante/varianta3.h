@@ -7,6 +7,17 @@ C/C++ care citeºte toate numerele din fiºierul NR.TXT ºi afiºeazã pe ecran, sepa
 câte un spaþiu, în ordine crescãtoare, toate numerele din fiºier care au cel puþin 3 cifre.
 Dacã fiºierul nu conþine astfel de numere se va afiºa pe ecran mesajul NU EXISTA.*/
 
+int contorCifre(int n) {
+
+	int ct = 0;
+
+	while (n) {
+		ct++;
+		n /= 10;
+	}
+	return ct;
+}
+
 void minim3cifre(int v[], int d) {
 
 	int ok = 0;

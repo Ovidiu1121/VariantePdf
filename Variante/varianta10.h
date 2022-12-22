@@ -67,20 +67,6 @@ mari două numere prime distincte mai mici decât n.
 Exemplu: dacă n= 28 la apelul subprogramului se va furniza prin parametrul a valoarea
 23 şi prin parametrul b valoarea 19.*/
 
-bool prim(int n) {
-
-	if (n == 0 || n == 1) {
-		return false;
-	}
-
-	for (int i = 2; i <= n / 2; i++) {
-		if (n % i == 0) {
-			return false;
-		}
-	}
-	return true;
-}
-
 void numerePrime(int n) {
 	int ct = 0;
 	for (int i = n; i >= 2; i--) {

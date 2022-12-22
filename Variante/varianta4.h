@@ -85,6 +85,17 @@ care citeşte numerele din fişierul NR.TXT şi afişează pe ecran, separate pr
 în ordine descrescătoare, toate numerele din fişier care au cel mult 2 cifre. Dacă fişierul nu
 conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.*/
 
+int contorCifre(int n) {
+
+    int ct = 0;
+
+    while (n) {
+        ct++;
+        n /= 10;
+    }
+    return ct;
+}
+
 void ordineDescrescatoare(int v[], int d) {
 
     for (int i = d - 1; i >= 0; i--) {

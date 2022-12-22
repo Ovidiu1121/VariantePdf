@@ -1,9 +1,20 @@
-﻿#include "varianta27.h"
+﻿#include "citire_afisare.h"
 
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n din intervalul
 [2,50] şi apoi n numere reale şi afişează pe ecran câte dintre cele n numere reale sunt
 egale cu media aritmetică a celorlalte n-1 numere reale.*/
+
+int medieAritmetica(int v[], int d) {
+
+	int s = 0;
+
+	for (int i = 0; i < d; i++) {
+		s += v[i];
+	}
+
+	return s / d;
+}
 
 int nrEgaleCuMediaA(int v[], int d) {
 

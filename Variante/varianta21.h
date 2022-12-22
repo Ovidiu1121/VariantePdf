@@ -1,10 +1,24 @@
-﻿#include "varianta20.h"
+﻿#include "citire_afisare.h"
 
 
 /*Scrieţi definiţia completă a unui subprogram i_prim care primeşte prin singurul său
 parametru, n, un număr natural din intervalul [2,30000] şi returnează diferenţa minimă
 p2-p1 în care p1 şi p2 sunt numere prime şi p1≤n≤p2.
 Exemplu: dacă n=20 atunci i_prim(n)=4, valoare obţinută pentru p1=19 şi p2=23.*/
+
+bool prim(int n) {
+
+	if (n == 0 || n == 1) {
+		return false;
+	}
+
+	for (int i = 2; i <= n / 2; i++) {
+		if (n % i == 0) {
+			return false;
+		}
+	}
+	return true;
+}
 
 int primDupaNr(int n) {
 
