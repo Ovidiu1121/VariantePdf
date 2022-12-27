@@ -1,6 +1,62 @@
-﻿#include "varianta36.h"
+﻿#include "citire_afisare.h"
 
 
+/*Se utilizează un algoritm pentru a genera în ordine lexicografică inversă toate permutările
+mulţimii {1,2,3,4,5}. Primele patru permutări generate sunt: 54321, 54312, 54231,
+54213. A cincea permutare este:*/
+
+int s[100], n = 5;
+int v[5] = { 1,2,3,4,5 };
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < n; i++) {
+		cout << s[i];
+	}
+}
+
+int valid(int k) {
+
+	for (int i = 0; i < k; i++) {
+		if (s[i] == s[k]) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == (n - 1)) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = n-1; i >=0; i--) {
+		s[k] = v[i];
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1var37() {
+
+	back(0);
+
+}
 
 /*Scrieţi un program C/C++ care citeşte numerele naturale nenule n şi k (k≤n≤100) şi un
 tablou unidimensional cu n elemente numere întregi, fiecare având cel mult 4 cifre.
@@ -8,6 +64,17 @@ Programul modifică tabloul, permutând circular, cu k poziţii spre stânga, el
 acestuia şi afişează pe ecran, separate prin câte un spaţiu, elementele tabloului obţinut.
 Exemplu: dacă n=4, k=3 şi tabloul v=(1,2,3,4), atunci se vor afişa în ordine
 elementele: 4 1 2 3.*/
+
+void permutareCircularaStanga(int v[], int d) {
+
+	int aux = v[0];
+
+	for (int i = 0; i < d - 1; i++) {
+		v[i] = v[i + 1];
+	}
+	v[d - 1] = aux;
+
+}
 
 void permutareDupaK(int v[], int d, int k) {
 

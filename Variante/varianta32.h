@@ -1,6 +1,70 @@
-#include "varianta31.h"
+#include "citire_afisare.h"
 
 
+
+//s3
+
+/*În vederea participãrii la un concurs, elevii de la liceul sportiv au dat o probã de selecþie, în
+urma cãreia primii 6 au obþinut punctaje egale. În câte moduri poate fi formatã echipa
+selecþionatã ºtiind cã poate avea doar 4 membri, aleºi dintre cei 6, ºi cã ordinea acestora în
+cadrul echipei nu conteazã?*/
+
+int s[100], n = 6, m = 4;
+int ct = 0;
+void tipar() {
+
+	cout << endl;
+
+	for (int i = 0; i < m; i++) {
+		cout << s[i];
+	}
+
+}
+
+int valid(int k) {
+
+	for (int i = 0; i < k; i++) {
+		if (s[i] >= s[i + 1]) {
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = 1; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				ct++;
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var32() {
+
+	back(0);
+	cout <<"\n==>>"<< ct;
+}
 
 /*Scrieþi definiþia completã a subprogramului nr_prim care are ca parametru un numãr
 natural x ºi returneazã cel mai mic numãr prim, strict mai mare decât x.

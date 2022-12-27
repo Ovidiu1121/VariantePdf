@@ -1,6 +1,72 @@
-﻿#include "varianta32.h"
+﻿#include "citire_afisare.h"
 
 
+
+/*Folosind un algoritm de generare putem obţine numere naturale de k cifre care au suma
+cifrelor egală cu un număr natural s. Astfel, pentru valorile k=2 şi s=6 se generează, în
+ordine, numerele: 15, 24, 33, 42, 51, 60. Care va fi al treilea număr generat pentru k=4 şi
+s=5?*/
+
+int s[100], n = 6, m = 2, suma = 6;
+
+void tipar() {
+
+	cout << endl;
+
+	for (int i = 0; i < m; i++) {
+		cout << s[i];
+	}
+
+}
+
+int valid(int k) {
+
+	if (s[0] == 0) {
+		return 0;
+	}
+
+	int sum = 0;
+	for (int i = 0; i < k; i++) {
+		sum += s[i];
+	}
+	if (sum != suma) {
+		return 0;
+	}
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
+
+	for (int i = 0; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var33() {
+
+	back(0);
+
+}
 
 /*Subprogramul sum3 primeşte prin parametrul x un tablou unidimensional, cu cel mult 100
 de elemente, numere întregi cu cel mult 4 cifre fiecare, iar prin parametrul n un număr

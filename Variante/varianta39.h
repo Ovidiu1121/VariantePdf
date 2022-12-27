@@ -1,5 +1,16 @@
-﻿#include "varianta38.h"
+﻿#include "citire_afisare.h"
 
+
+/*Utilizăm metoda backtracking pentru generarea tuturor modalităţilor de a scrie numărul 6 ca
+sumă a cel puţin două numere naturale nenule. Termenii fiecărei sume sunt în ordine
+crescătoare. Soluţiile se generează în ordinea: 1+1+1+1+1+1, 1+1+1+1+2, 1+1+1+3,
+1+1+4, 1+5, 2+2+2, 2+4 şi 3+3. Se aplică exact aceeaşi metodă pentru scrierea lui 9.
+Care este penultima soluţie?*/
+
+void ex1Var39() {
+
+
+}
 
 /*Pe prima linie a fişierului bac.in se află un număr natural nenul n (n≤1000), iar pe a
 doua linie a fişierului se află un şir format din n numere naturale, despărţite prin câte un

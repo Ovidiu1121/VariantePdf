@@ -1,12 +1,50 @@
-#include "varianta34.h"
+ï»¿#include "citire_afisare.h"
 
+//s2
 
-/*doua linie n numere naturale cu cel mult 9 cifre fiecare, despãrşite prin câte un spaşiu.
-Scrieşi un program C/C++ care citeºte toate numerele din fiºier ºi afiºeazã pe ecran,
-separate prin câte un spaşiu, numerele de pe a doua linie a fiºierului, care încep ºi se
-terminã cu aceeaºi cifrã. 
-Exemplu: dacã fiºierul numere.in are
-conşinutul alãturat, se numerele ce se vor afiºa
+/*ScrieÅ£i programul C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n (nâ‰¤50) ÅŸi
+construieÅŸte Ã®n memorie o matrice cu n linii ÅŸi n coloane, ale cÄƒrei elemente sunt
+numere Ã®ntregi citite de la tastaturÄƒ. Pentru fiecare coloanÄƒ a matricei, Ã®n ordine, programul
+afiÅŸeazÄƒ pe ecran cel mai mic numÄƒr de pe respectiva coloanÄƒ. Numerele afiÅŸate vor fi
+separate prin cÃ¢te un spaÅ£iu. (10p.)
+Exemplu: pentru n=4 ÅŸi matricea alÄƒturatÄƒ, se vor afiÅŸa
+pe ecran valorile: -7 18 -10 2.
+122 103 5 10
+-7 18 -10 2
+107 999 59 4
+1 200 100 7*/
+
+void matrice(int a[100][100], int n) {
+
+	for (int j = 0; j < n; j++) {
+		int min = a[0][j]; 
+		for (int i = 1; i < n; i++) {
+			if (a[i][j] < min) {
+				min = a[i][j];
+			}
+		}
+		cout << min << " ";
+	}
+
+}
+
+void ex5Var35() {
+
+	int a[100][100], n, m;
+
+	citireMatrice(a, n, m);
+	matrice(a, n);
+
+}
+
+//s3
+
+/*doua linie n numere naturale cu cel mult 9 cifre fiecare, despÄƒrÅ£ite prin cÃ¢te un spaÅ£iu.
+ScrieÅ£i un program C/C++ care citeÅŸte toate numerele din fiÅŸier ÅŸi afiÅŸeazÄƒ pe ecran,
+separate prin cÃ¢te un spaÅ£iu, numerele de pe a doua linie a fiÅŸierului, care Ã®ncep ÅŸi se
+terminÄƒ cu aceeaÅŸi cifrÄƒ. 
+Exemplu: dacÄƒ fiÅŸierul numere.in are
+conÅ£inutul alÄƒturat, se numerele ce se vor afiÅŸa
 sunt: 55 3 101 7 2782
 9
 55 107 3 101 92 7 208 2782
@@ -45,10 +83,10 @@ void ex3Var35() {
 
 }
 
-/*Scrieşi definişia completã a unui subprogram sum care primeºte prin parametrul x un
-numãr natural de cel mult 4 cifre ºi returneazã suma divizorilor numãrului x, diferişi de 1 ºi
-de el însuºi.
-Exemplu: dacã x=10 se va returna valoarea 7 (7=2+5).*/
+/*ScrieÅ£i definiÅ£ia completÄƒ a unui subprogram sum care primeÅŸte prin parametrul x un
+numÄƒr natural de cel mult 4 cifre ÅŸi returneazÄƒ suma divizorilor numÄƒrului x, diferiÅ£i de 1 ÅŸi
+de el Ã®nsuÅŸi.
+Exemplu: dacÄƒ x=10 se va returna valoarea 7 (7=2+5).*/
 
 int sumaDivizoriImproprii(int n) {
 	int s = 0;
@@ -66,13 +104,13 @@ void ex4aVar35() {
 
 }
 
-/*Scrieşi programul C/C++ care citeºte de la tastaturã un numãr natural n (0<n<100), apoi
-n numere naturale (cu cel mult 4 cifre fiecare). Programul determinã, folosind apeluri utile
-ale subprogramului sum, pentru fiecare numãr natural citit, suma divizorilor sãi proprii ºi
-afiºeazã pe ecran sumele determinate, în ordinea crescãtoare a valorilor lor, separate prin
-câte un spaşiu. 
-Exemplu: dacã n=5 ºi numerele citite sunt 10 2 33 6 11
-valorile afiºate pe ecran vor fi: 0 0 5 7 14*/
+/*ScrieÅ£i programul C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n (0<n<100), apoi
+n numere naturale (cu cel mult 4 cifre fiecare). Programul determinÄƒ, folosind apeluri utile
+ale subprogramului sum, pentru fiecare numÄƒr natural citit, suma divizorilor sÄƒi proprii ÅŸi
+afiÅŸeazÄƒ pe ecran sumele determinate, Ã®n ordinea crescÄƒtoare a valorilor lor, separate prin
+cÃ¢te un spaÅ£iu. 
+Exemplu: dacÄƒ n=5 ÅŸi numerele citite sunt 10 2 33 6 11
+valorile afiÅŸate pe ecran vor fi: 0 0 5 7 14*/
 
 void vectorSume(int v[], int d) {
 
