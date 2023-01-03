@@ -1,4 +1,4 @@
-#include "varianta44.h"
+#include "citire_afisare.h"
 
 
 /*Scrieþi programul C/C++ care citeºte de la tastaturã numãrul natural n (0<n<100) ºi un ºir
@@ -7,6 +7,17 @@ formate din cel mult trei cifre. Programul determinã ºi afiºeazã pe ecran toate 
 ºir care apar o singurã datã în acesta.
 Exemplu: dacã n=7, iar ºirul este format din elementele (3.4, -151, 0.291, 3.4,
 4.09, 3.4, 0.291), atunci pe ecran se va afiºa -151 4.09.*/
+
+int frecventaNumar(int v[], int d, int n) {
+
+	int f[100]{};
+
+	for (int i = 0; i < d; i++) {
+		f[v[i]]++;
+	}
+
+	return f[n];
+}
 
 void singuraAparitie(int v[], int d) {
 

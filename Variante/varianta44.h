@@ -1,10 +1,34 @@
-#include "varianta43.h"
+ï»¿#include "citire_afisare.h"
+
+//s2
+
+/*ScrieÅ£i un program C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n (0<nâ‰¤23) ÅŸi apoi
+construieÅŸte Ã®n memorie o matrice cu n linii ÅŸi n coloane, formatÄƒ din numere naturale
+nenule, mai mici sau egale cu n, astfel Ã®ncÃ¢t sÄƒ nu existe douÄƒ linii cu aceeaÅŸi sumÄƒ a
+elementelor ÅŸi nici douÄƒ coloane cu aceeaÅŸi sumÄƒ a elementelor.
+Programul va afiÅŸa matricea pe ecran, cÃ¢te o linie a matricei pe o linie a ecranului, cu un
+spaÅ£iu Ã®ntre elementele fiecÄƒrei linii.*/
+
+void ex5Var44() {
 
 
-/*Scrieşi definişia completã a unui subprogram P, cu doi parametri, a ºi b, numere naturale cu
-cel mult 4 cifre fiecare, care afiºeazã pe ecran, separate prin câte un spaşiu, numerele aflate
-în intervalul închis determinat de valorile a ºi b, care sunt pãtratele unor numere prime.
-Exemplu: pentru a=40 ºi b=1 se vor afiºa valorile: 4 9 25*/
+
+}
+
+//s3
+
+/*ScrieÅ£i definiÅ£ia completÄƒ a unui subprogram P, cu doi parametri, a ÅŸi b, numere naturale cu
+cel mult 4 cifre fiecare, care afiÅŸeazÄƒ pe ecran, separate prin cÃ¢te un spaÅ£iu, numerele aflate
+Ã®n intervalul Ã®nchis determinat de valorile a ÅŸi b, care sunt pÄƒtratele unor numere prime.
+Exemplu: pentru a=40 ÅŸi b=1 se vor afiÅŸa valorile: 4 9 25*/
+
+bool patratPerfect(int n) {
+
+	if (sqrt(n) == (int)sqrt(n)) {
+		return true;
+	}
+	return false;
+}
 
 void intervalPatratePerf(int a, int b) {
 
@@ -22,15 +46,15 @@ void ex3Var44() {
 
 }
 
-/*Fiºierul text numere.txt conşine pe prima linie un numãr natural n (0<n<100000), iar pe a
-doua linie n numere naturale, formate din cel mult 4 cifre, separate prin câte un spaşiu.
-a) Scrieşi un program C/C++ care determinã în mod eficient, din punct de vedere al timpului
-de executare, cifrele ce apar în scrierea numerelor situate pe a doua linie a fiºierului.
-Programul va afiºa pe ecran aceste cifre in ordine crescãtoare, separate prin câte un spaşiu.
-Exemplu: daca fiºierul numere.txt are urmãtorul conşinut:
+/*FiÅŸierul text numere.txt conÅ£ine pe prima linie un numÄƒr natural n (0<n<100000), iar pe a
+doua linie n numere naturale, formate din cel mult 4 cifre, separate prin cÃ¢te un spaÅ£iu.
+a) ScrieÅ£i un program C/C++ care determinÄƒ Ã®n mod eficient, din punct de vedere al timpului
+de executare, cifrele ce apar Ã®n scrierea numerelor situate pe a doua linie a fiÅŸierului.
+Programul va afiÅŸa pe ecran aceste cifre in ordine crescÄƒtoare, separate prin cÃ¢te un spaÅ£iu.
+Exemplu: daca fiÅŸierul numere.txt are urmÄƒtorul conÅ£inut:
 7
 243 32 545 74 12 1344 90
-atunci pe ecran se va afiºa: 0 1 2 3 4 5 7 9*/
+atunci pe ecran se va afiÅŸa: 0 1 2 3 4 5 7 9*/
 
 void cifreDistincte(int v[], int d) {
 	int a[100], b = 0;

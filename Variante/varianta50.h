@@ -1,5 +1,15 @@
-﻿#include "varianta49.h"
+﻿#include "citire_afisare.h"
 
+/*Se generează în ordine strict crescătoare toate numerele de câte şase cifre care conţin:
+cifra 1 o singură dată, cifra 2 de două ori şi cifra 3 de trei ori. Se obţin, în această ordine,
+numerele: 122333, 123233, 123323, …, 333221. Ce număr se află imediat înaintea şi ce
+număr se află imediat după numărul 332312 în şirul numerelor generate?*/
+
+void ex2Var50() {
+
+
+
+}
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură trei numere naturale nenule a, b şi
 n, cu cel mult 3 cifre fiecare şi care afişează pe ecran toţi divizorii lui n din intervalul închis
@@ -34,6 +44,17 @@ vor scrie în ordine crescătoare, pe aceeaşi linie, separate prin câte un spa
 Exemplu: dacă fişierul bac.in conţine pe prima linie numărul 11, iar pe linia a doua
 valorile 23 12 54 12 78 345 67 23 78 934 23
 atunci fişierul bac.out va conţine: 12 23 78*/
+
+int frecventaNumar(int v[], int d, int n) {
+
+	int f[100]{};
+
+	for (int i = 0; i < d; i++) {
+		f[v[i]]++;
+	}
+
+	return f[n];
+}
 
 void minim2ori(int v[], int d) {
 

@@ -1,6 +1,58 @@
-﻿#include "varianta48.h"
+﻿#include "citire_afisare.h"
+
+/*Se generează în ordine strict crescătoare numerele de câte şase cifre care conţin: cifra 1 o
+singură dată, cifra 2 de două ori şi cifra 3 de trei ori. Se obţin, în această ordine, numerele:
+122333, 123233, 123323, …, 333221. Câte numere generate prin această metodă au
+prima cifră 1 şi ultima cifră 2?*/
+
+int s[100], n = 4, m = 4;
+
+void tipar() {
+	cout << endl;
+	for (int i = 0; i < m; i++) {
+		cout << s[i];
+	}
+
+}
+
+int valid(int k) {
+
+	return 1;
+}
+
+int solutie(int k) {
+
+	if (k == m - 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+void back(int k) {
 
 
+	for (int i = 1; i <= n; i++) {
+		s[k] = i;
+		if (valid(k)) {
+			if (solutie(k)) {
+				tipar();
+			}
+			else {
+				back(k + 1);
+			}
+		}
+	}
+
+}
+
+void ex1Var49() {
+
+	back(0);
+
+}
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n ( 1≤n≤50) şi apoi
 un şir de n numere naturale cu cel mult 4 cifre fiecare şi care verifică dacă elementele şirului

@@ -1,20 +1,46 @@
-#include "varianta46.h"
+ï»¿#include "citire_afisare.h"
+
+//s2
+
+/*ScrieÅ£i un program C/C++ care citeÅŸte de la tastaturÄƒ douÄƒ numere naturale m ÅŸi n
+(0<mâ‰¤10, 0<nâ‰¤10) ÅŸi elementele unui tablou bidimensional cu m linii ÅŸi n coloane care
+reÅ£ine numere naturale mai mici decÃ¢t 100; programul va construi ÅŸi va afiÅŸa pe ecran un
+nou tablou bidimensional cu n linii ÅŸi m coloane, obÅ£inut din primul prin rotirea acestuia Ã®n
+sens trigonometric cu 90o, ca Ã®n exemplu. (10p.)
+Exemplu: pentru m=4,
+n=5 ÅŸi tabloul:
+21 22 23 24 25
+26 27 28 29 30
+31 32 33 34 35
+36 37 38 39 40
+se va afiÅŸa: 
+25 30 35 40
+24 29 34 39
+23 28 33 38
+22 27 32 37
+21 26 31 36*/
+
+void ex5Var47() {
 
 
 
-/*Fiºierul text bac.txt conşine pe prima linie un numãr natural n (n<100), iar pe a doua
-linie, separate prin câte un spaşiu, n numere naturale de cel mult 8 cifre fiecare.
-Scrieşi un program C/C++ care citeºte de la tastaturã un numãr natural k (k<50) precum
-ºi numerele din fiºierul bac.txt ºi afiºeazã pe ecran, cu câte un spaşiu între ele, toate
-numerele de pe a doua linie a fiºierului care sunt puteri ale lui k. Un numãr natural x este
-putere a lui k dacã existã un numãr natural y astfel încât x=k
-y. Dacã nu existã un
-asemenea numãr pe a doua linie a fiºierului, se afiºeazã pe ecran mesajul NU.
-Exemplu: dacã se citeºte de la tastaturã k=2, iar
-fiºierul are conşinutul alãturat
+}
+
+//s3
+
+/*FiÅŸierul text bac.txt conÅ£ine pe prima linie un numÄƒr natural n (n<100), iar pe a doua
+linie, separate prin cÃ¢te un spaÅ£iu, n numere naturale de cel mult 8 cifre fiecare.
+ScrieÅ£i un program C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural k (k<50) precum
+ÅŸi numerele din fiÅŸierul bac.txt ÅŸi afiÅŸeazÄƒ pe ecran, cu cÃ¢te un spaÅ£iu Ã®ntre ele, toate
+numerele de pe a doua linie a fiÅŸierului care sunt puteri ale lui k. Un numÄƒr natural x este
+putere a lui k dacÄƒ existÄƒ un numÄƒr natural y astfel Ã®ncÃ¢t x=k
+y. DacÄƒ nu existÄƒ un
+asemenea numÄƒr pe a doua linie a fiÅŸierului, se afiÅŸeazÄƒ pe ecran mesajul NU.
+Exemplu: dacÄƒ se citeÅŸte de la tastaturÄƒ k=2, iar
+fiÅŸierul are conÅ£inutul alÄƒturat
 8
 32 56 317 809 256 2 1 60, atunci pe ecran se
-afiºeazã numerele:
+afiÅŸeazÄƒ numerele:
 32 256 2 1 */
 
 bool putere(int a, int k) {
@@ -49,13 +75,23 @@ void ex3Var47() {
 
 }
 
-/*Scrieşi programul C/C++ care citeºte de la tastaturã un numãr natural n (0<n<25), apoi
-un ºir de n numere naturale nenule cu cel mult 9 cifre fiecare ºi care afiºeazã pe ecran,
-separate prin câte un spaşiu, numerele din ºir care au suma cifrelor maximã, folosind
+/*ScrieÅ£i programul C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n (0<n<25), apoi
+un ÅŸir de n numere naturale nenule cu cel mult 9 cifre fiecare ÅŸi care afiÅŸeazÄƒ pe ecran,
+separate prin cÃ¢te un spaÅ£iu, numerele din ÅŸir care au suma cifrelor maximÄƒ, folosind
 apeluri utile ale subprogramului cif.
-Exemplu: dacã pentru n=8 se citeºte ºirul de numere 274 56018 354 8219 293 287
-932 634 atunci, pe ecran, se afiºeazã numerele 56018 8219.*/
+Exemplu: dacÄƒ pentru n=8 se citeÅŸte ÅŸirul de numere 274 56018 354 8219 293 287
+932 634 atunci, pe ecran, se afiÅŸeazÄƒ numerele 56018 8219.*/
 
+int sumaCifre(int n) {
+
+	int s = 0;
+
+	while (n) {
+		s += n % 10;
+		n /= 10;
+	}
+	return s;
+}
 
 void sumaCifreMaxVec(int v[], int d) {
 

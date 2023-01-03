@@ -1,120 +1,5 @@
 ﻿#include "citire_afisare.h"
 
-
-/*Se consideră o stivă în care iniţial au fost introduse, în această ordine,
-elementele cu valorile 1, 2 şi 3, ca în figura alăturată. Se notează cu
-AD(x) operaţia prin care se adaugă elementul cu valoarea x în vârful
-stivei şi cu EL operaţia prin care se elimină elementul din vârful stivei.
-Reprezentaţi, după modelul alăturat, conţinutul stivei, rezultat în urma
-executării secvenţei de operaţii: AD(4);EL;EL;AD(5);EL.*/
-
-struct Node {
-    int data;
-    Node* next;
-} *pr, * ul;
-
-void ad(Node*& pr, Node*& ul, int x){
-    if (pr == NULL)
-    {
-        Node* q = new Node;
-        q->data = x;
-        q->next = NULL;
-        pr = q;
-        ul = q;
-        return;
-    }
-    Node* q = new Node;
-    q->data = x;
-    q->next = NULL;
-    ul->next = q;
-    ul = q;
-}
-
-void citireStiva(Node*& pr) {
-
-    ifstream read("in.txt");
-
-    Node* aux = pr;
-
-    while (!read.eof()) {
-        int data;
-        read >> data;
-        ad(pr,ul, data);
-    }
-
-
-}
-
-void el(Node*& pr){
-    if (pr == NULL)
-        return;
-    if (pr->next == NULL)
-    {
-        delete pr;
-        pr = NULL;
-        return;
-    }
-    Node* q = pr->next;
-    delete pr;
-    pr = q;
-}
-
-void afisareStiva(Node* pr)
-{
-
-    for (; pr; pr = pr->next) {
-        cout << pr->data << " ";
-    }
-
-}
-
-void ex3Subiect2Var4() {
-
-    citireStiva(pr);
-    ad(pr, ul, 4);
-    el(pr);
-    el(pr);
-    ad(pr, ul, 5);
-    el(pr);
-    afisareStiva(pr);
-}
-
-/*Fişierul text NR.TXT conţine pe o singură linie, separate prin câte un singur spaţiu, cel mult
-100 de numere naturale, fiecare număr având cel mult 4 cifre. Scrieţi un program C/C++
-care citeşte numerele din fişierul NR.TXT şi afişează pe ecran, separate prin câte un spaţiu,
-în ordine descrescătoare, toate numerele din fişier care au cel mult 2 cifre. Dacă fişierul nu
-conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.*/
-
-int contorCifre(int n) {
-
-    int ct = 0;
-
-    while (n) {
-        ct++;
-        n /= 10;
-    }
-    return ct;
-}
-
-void ordineDescrescatoare(int v[], int d) {
-
-    for (int i = d - 1; i >= 0; i--) {
-        if (contorCifre(v[i]) >= 2) {
-            cout << v[i] << " ";
-        }
-    }
-
-}
-
-void ex3Subiect3Var4() {
-
-    int v[100], d;
-
-    citire(v, d);
-    ordineDescrescatoare(v, d);
-
-}
-
 //s2
 
 /*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (2≤n≤24) şi
@@ -167,7 +52,57 @@ void ex4Subiect2Var4() {
 
 }
 
+//s3
 
+/*Fişierul text NR.TXT conţine pe o singură linie, separate prin câte un singur spaţiu, cel mult
+100 de numere naturale, fiecare număr având cel mult 4 cifre. Scrieţi un program C/C++
+care citeşte numerele din fişierul NR.TXT şi afişează pe ecran, separate prin câte un spaţiu,
+în ordine descrescătoare, toate numerele din fişier care au cel mult 2 cifre. Dacă fişierul nu
+conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.*/
+
+int contorCifre(int n) {
+
+    int ct = 0;
+
+    while (n) {
+        ct++;
+        n /= 10;
+    }
+    return ct;
+}
+
+void ordineDescrescatoare(int v[], int d) {
+
+    for (int i = d - 1; i >= 0; i--) {
+        if (contorCifre(v[i]) >= 2) {
+            cout << v[i] << " ";
+        }
+    }
+
+}
+
+void ex3Subiect3Var4() {
+
+    int v[100], d;
+
+    citire(v, d);
+    ordineDescrescatoare(v, d);
+
+}
+
+/*Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n cu exact 8 cifre,
+fiecare cifră fiind nenulă, şi care determină şi afişează pe ecran, folosind apeluri utile ale
+subprogramului cif, cel mai mic număr palindrom ce poate fi obţinut prin rearanjarea
+tuturor cifrelor numărului n. Dacă nu se poate obţine un palindrom din toate cifrele numărului
+n, programul va afişa pe ecran numărul 0. Un număr natural este palindrom dacă este egal
+cu numărul obţinut prin scrierea cifrelor sale în ordine inversă.
+Exemplu: dacă n=21523531 atunci se va afişa pe ecran numărul 12355321, iar dacă
+n=12272351 atunci se va afişa pe ecran numărul 0.*/
+
+void ex4Var4() {
+
+
+}
 
 
 

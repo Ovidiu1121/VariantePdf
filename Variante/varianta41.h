@@ -1,12 +1,52 @@
-#include "varianta40.h"
+ï»¿#include "citire_afisare.h"
 
+//s2
 
-/*Scrieşi un subprogram DIST, cu doi parametri, care primeºte prin intermediul parametrului a
+/*ScrieÅ£i un program C/C++ care citeÅŸte de la tastaturÄƒ un numÄƒr natural n
+(1â‰¤nâ‰¤23) ÅŸi apoi construieÅŸte Ã®n memorie o matrice cu n linii ÅŸi n coloane,
+numerotate de la 1 la n, astfel Ã®ncÃ¢t fiecare element situat pe o linie i
+(1â‰¤iâ‰¤n) ÅŸi pe o coloanÄƒ j (1â‰¤jâ‰¤n) va fi egal cu suma dintre i ÅŸi j.
+Programul va afiÅŸa matricea pe ecran, cÃ¢te o linie a matricei pe o linie a
+ecranului, elementele de pe aceeaÅŸi linie fiind separate prin cÃ¢te un spaÅ£iu.
+Exemplu: dacÄƒ n=4, se va afiÅŸa matricea alÄƒturatÄƒ. (10p.)
+2 3 4 5
+3 4 5 6
+4 5 6 7
+5 6 7 8*/
+
+void matrice(int n) {
+
+	int a[100][100];
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
+			a[i][j] = i + j;
+		}
+	}
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+}
+
+void ex5Var41() {
+
+	matrice(4);
+
+}
+
+//s3
+
+/*ScrieÅ£i un subprogram DIST, cu doi parametri, care primeÅŸte prin intermediul parametrului a
 un tablou unidimensional cu cel mult 100 de elemente, numere naturale de cel mult 4 cifre
-fiecare, ºi prin intermediul parametrului n un numãr natural nenul, n<100, ce reprezintã
-numãrul de elemente din tablou. Subprogramul returneazã valoarea 1 dacã toate
-elementele tabloului a sunt distincte ºi dacã diferenşa absolutã a oricãror douã elemente
-vecine din tablou este diferitã de 1, altfel returnând valoarea 0.*/
+fiecare, ÅŸi prin intermediul parametrului n un numÄƒr natural nenul, n<100, ce reprezintÄƒ
+numÄƒrul de elemente din tablou. Subprogramul returneazÄƒ valoarea 1 dacÄƒ toate
+elementele tabloului a sunt distincte ÅŸi dacÄƒ diferenÅ£a absolutÄƒ a oricÄƒror douÄƒ elemente
+vecine din tablou este diferitÄƒ de 1, altfel returnÃ¢nd valoarea 0.*/
 
 bool diferentaAbsoluta(int v[], int d) {
 
@@ -37,14 +77,14 @@ void ex3Var41() {
 
 }
 
-/*Scrieşi un program C/C++ care determinã în mod eficient din punct de vedere al
-timpului de executare, cea mai mare cifrã dintre cele situate pe a doua linie a fiºierului,
-precum ºi numãrul de aparişii ale acesteia. Cele douã numere vor fi afiºate pe o singurã
-linie a ecranului, separate printr-un spaşiu.
-Exemplu: daca fiºierul numere.txt are urmãtorul conşinut:
+/*ScrieÅ£i un program C/C++ care determinÄƒ Ã®n mod eficient din punct de vedere al
+timpului de executare, cea mai mare cifrÄƒ dintre cele situate pe a doua linie a fiÅŸierului,
+precum ÅŸi numÄƒrul de apariÅ£ii ale acesteia. Cele douÄƒ numere vor fi afiÅŸate pe o singurÄƒ
+linie a ecranului, separate printr-un spaÅ£iu.
+Exemplu: daca fiÅŸierul numere.txt are urmÄƒtorul conÅ£inut:
 7
 3 5 2 1 5 3 1
-atunci pe ecran se va afiºa: 5 2.*/
+atunci pe ecran se va afiÅŸa: 5 2.*/
 
 void ceaMaiMareCifra(int v[], int d) {
 
