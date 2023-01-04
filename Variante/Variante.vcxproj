@@ -200,6 +200,11 @@
     <ClInclude Include="varianta59.h" />
     <ClInclude Include="varianta6.h" />
     <ClInclude Include="varianta60.h" />
+    <ClInclude Include="varianta61.h" />
+    <ClInclude Include="varianta62.h" />
+    <ClInclude Include="varianta63.h" />
+    <ClInclude Include="varianta64.h" />
+    <ClInclude Include="varianta65.h" />
     <ClInclude Include="varianta7.h" />
     <ClInclude Include="varianta8.h" />
     <ClInclude Include="varianta9.h" />
