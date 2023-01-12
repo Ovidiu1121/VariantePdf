@@ -218,6 +218,66 @@
     <ClInclude Include="varianta65.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="varianta66.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta67.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta68.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta69.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta70.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta71.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta72.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta73.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta74.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta75.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta76.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta77.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta78.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta79.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="variantaa80.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta81.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta82.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta83.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta84.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta85.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">

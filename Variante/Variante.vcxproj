@@ -205,9 +205,29 @@
     <ClInclude Include="varianta63.h" />
     <ClInclude Include="varianta64.h" />
     <ClInclude Include="varianta65.h" />
+    <ClInclude Include="varianta66.h" />
+    <ClInclude Include="varianta67.h" />
+    <ClInclude Include="varianta68.h" />
+    <ClInclude Include="varianta69.h" />
     <ClInclude Include="varianta7.h" />
+    <ClInclude Include="varianta70.h" />
+    <ClInclude Include="varianta71.h" />
+    <ClInclude Include="varianta72.h" />
+    <ClInclude Include="varianta73.h" />
+    <ClInclude Include="varianta74.h" />
+    <ClInclude Include="varianta75.h" />
+    <ClInclude Include="varianta76.h" />
+    <ClInclude Include="varianta77.h" />
+    <ClInclude Include="varianta78.h" />
+    <ClInclude Include="varianta79.h" />
     <ClInclude Include="varianta8.h" />
+    <ClInclude Include="varianta81.h" />
+    <ClInclude Include="varianta82.h" />
+    <ClInclude Include="varianta83.h" />
+    <ClInclude Include="varianta84.h" />
+    <ClInclude Include="varianta85.h" />
     <ClInclude Include="varianta9.h" />
+    <ClInclude Include="variantaa80.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt" />
