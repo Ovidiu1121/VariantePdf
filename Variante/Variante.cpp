@@ -1,9 +1,9 @@
-#include "varianta85.h"
+#include "varianta90.h"
 
 int main()
 {
 
-	ex4Var85();
+	ex4Var90();
 
 }
 
