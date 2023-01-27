@@ -232,6 +232,13 @@
     <ClInclude Include="varianta89.h" />
     <ClInclude Include="varianta9.h" />
     <ClInclude Include="varianta90.h" />
+    <ClInclude Include="varianta91.h" />
+    <ClInclude Include="varianta92.h" />
+    <ClInclude Include="varianta93.h" />
+    <ClInclude Include="varianta94.h" />
+    <ClInclude Include="varianta95.h" />
+    <ClInclude Include="varianta96.h" />
+    <ClInclude Include="varianta97.h" />
     <ClInclude Include="variantaa80.h" />
   </ItemGroup>
   <ItemGroup>

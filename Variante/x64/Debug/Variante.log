@@ -1,2 +1,4 @@
 ﻿  Variante.cpp
+C:\Data\c++\Varinte\Variante\Variante\varianta97.h(108,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Data\c++\Varinte\Variante\Variante\varianta97.h(109,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Variante.vcxproj -> C:\Data\c++\Varinte\Variante\x64\Debug\Variante.exe
