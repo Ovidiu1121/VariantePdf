@@ -48,6 +48,8 @@ void ex5Var90() {
 
 }
 
+//s3
+
 /*Funcţia verif primeşte prin intermediul parametrului n un număr natural format din cel mult
 9 cifre, şi prin intermediul parametrului a, un număr natural nenul (2≤a≤9). Funcţia
 returnează valoarea 1 dacă n este un număr format din cifre aparţinând intervalului închis
