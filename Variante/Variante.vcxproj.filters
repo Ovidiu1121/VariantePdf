@@ -314,6 +314,15 @@
     <ClInclude Include="varianta97.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="varianta98.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta99.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta100.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">

@@ -7,7 +7,7 @@ ordine descrescătoare lexicografic, toate combinaţiile de n cifre care aparţi
 Dacă se rulează acest program şi se citeşte pentru n valoarea 8, imediat după combinaţia
 10101000 va fi afişată combinaţia:*/
 
-int s[100], n = 2;
+int s[100], n = 9;
 int v[2] = { 1,0 };
 
 void tipar() {

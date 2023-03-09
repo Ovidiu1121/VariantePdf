@@ -6,7 +6,7 @@ ordine crescătoare lexicografic, toate combinaţiile formate din n cifre care a
 Dacă se rulează acest program şi se citeşte pentru n valoarea 9, imediat după combinaţia
 011011011 va fi afişată combinaţia: */
 
-int s[100], n = 2;
+int s[100], n = 9;
 int f[2] = { 0,1 };
 void tipar() {
 	cout << endl;

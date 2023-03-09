@@ -145,6 +145,7 @@
     <ClInclude Include="citire_afisare.h" />
     <ClInclude Include="varianta1.h" />
     <ClInclude Include="varianta10.h" />
+    <ClInclude Include="varianta100.h" />
     <ClInclude Include="varianta11.h" />
     <ClInclude Include="varianta12.h" />
     <ClInclude Include="varianta13.h" />
@@ -239,6 +240,8 @@
     <ClInclude Include="varianta95.h" />
     <ClInclude Include="varianta96.h" />
     <ClInclude Include="varianta97.h" />
+    <ClInclude Include="varianta98.h" />
+    <ClInclude Include="varianta99.h" />
     <ClInclude Include="variantaa80.h" />
   </ItemGroup>
   <ItemGroup>
