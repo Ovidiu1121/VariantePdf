@@ -1,5 +1,2 @@
 ﻿  Variante.cpp
-C:\Data\c++\Varinte\Variante\Variante\varianta100.h(74,8): warning C4804: '<': unsafe use of type 'bool' in operation
-C:\Data\c++\Varinte\Variante\Variante\varianta100.h(77,13): warning C4804: '<': unsafe use of type 'bool' in operation
-C:\Data\c++\Varinte\Variante\Variante\varianta100.h(80,13): warning C4804: '<': unsafe use of type 'bool' in operation
   Variante.vcxproj -> C:\Data\c++\Varinte\Variante\x64\Debug\Variante.exe
