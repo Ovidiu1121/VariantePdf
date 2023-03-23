@@ -347,6 +347,27 @@
     <ClInclude Include="varianta108.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="varianta109.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta110.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta111.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta112.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta113.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta114.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta115.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
