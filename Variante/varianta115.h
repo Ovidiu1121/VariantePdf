@@ -13,10 +13,10 @@ void divizorPrimMaxim(int n) {
 
     while (d * d <= n){
         if (n % d == 0){
-            int k = 0;
+            p = 0;
             while (n % d == 0){
                 n /= d;
-                k++;
+                p++;
                 if (d > p){
                     p = d;
                 }

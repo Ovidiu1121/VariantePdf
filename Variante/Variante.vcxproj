@@ -162,7 +162,12 @@
     <ClInclude Include="varianta113.h" />
     <ClInclude Include="varianta114.h" />
     <ClInclude Include="varianta115.h" />
+    <ClInclude Include="varianta116.h" />
+    <ClInclude Include="varianta117.h" />
+    <ClInclude Include="varianta118.h" />
+    <ClInclude Include="varianta119.h" />
     <ClInclude Include="varianta12.h" />
+    <ClInclude Include="varianta120.h" />
     <ClInclude Include="varianta13.h" />
     <ClInclude Include="varianta14.h" />
     <ClInclude Include="varianta15.h" />
