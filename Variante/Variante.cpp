@@ -1,4 +1,4 @@
-#include "varianta120.h"
+#include "varianta125.h"
 
 
 int main()
@@ -7,7 +7,7 @@ int main()
 
 
 
-	ex3Var20();
+	ex3Var5();
 
 
 
