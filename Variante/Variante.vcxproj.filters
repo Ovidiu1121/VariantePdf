@@ -5,13 +5,16 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2008">
+      <UniqueIdentifier>{a0a26f01-1a97-4212-904e-65c6927fd669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2009,jitaru">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -20,404 +23,419 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="varianta1.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="varianta1-2009.h">
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta2.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta3.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta4.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta5.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta6.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta7.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta8.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta9.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta10.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta11.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta12.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta13.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta14.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta15.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta16.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta17.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta18.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta19.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta20.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta21.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta22.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta23.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta24.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta25.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta26.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta27.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta28.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta29.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta30.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta31.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta32.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta33.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta34.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta35.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta36.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta37.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta38.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta39.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta40.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta41.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta42.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta43.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta44.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta45.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta46.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta47.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta48.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta49.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta50.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="citire_afisare.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta51.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta52.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta53.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta54.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta55.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta56.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta57.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta58.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta59.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta60.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta61.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta62.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta63.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta64.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta65.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta66.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta67.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta68.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta69.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta70.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta71.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta72.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta73.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta74.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta75.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta76.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta77.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta78.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta79.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="variantaa80.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta81.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta82.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta83.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta84.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta85.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta86.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta87.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta88.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta89.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta90.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta91.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta92.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta93.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta94.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta95.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta96.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta97.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta98.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta99.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta100.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
-    <ClInclude Include="varianta101.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="varianta101-jitaru.h">
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta102.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta103.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta104.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta105.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta106.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta107.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta108.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta109.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta110.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta111.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta112.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta113.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta114.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta115.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta116.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta117.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta118.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta119.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta120.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta121.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta122.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta123.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta124.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta125.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta126.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta127.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta128.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta129.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta130.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta131.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
     </ClInclude>
     <ClInclude Include="varianta132.h">
-      <Filter>Header Files</Filter>
+      <Filter>2009,jitaru</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2008.h">
+      <Filter>2008</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2008.h">
+      <Filter>2008</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta3-2008.h">
+      <Filter>2008</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta4-2008.h">
+      <Filter>2008</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta5-2008.h">
+      <Filter>2008</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
