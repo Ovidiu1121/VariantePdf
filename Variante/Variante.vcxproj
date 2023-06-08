@@ -145,6 +145,8 @@
     <ClInclude Include="citire_afisare.h" />
     <ClInclude Include="varianta1-2008.h" />
     <ClInclude Include="varianta1-2009.h" />
+    <ClInclude Include="varianta1-2011.h" />
+    <ClInclude Include="varianta1-2012.h" />
     <ClInclude Include="varianta10.h" />
     <ClInclude Include="varianta100.h" />
     <ClInclude Include="varianta101-jitaru.h" />
@@ -189,6 +191,8 @@
     <ClInclude Include="varianta18.h" />
     <ClInclude Include="varianta19.h" />
     <ClInclude Include="varianta2-2008.h" />
+    <ClInclude Include="varianta2-2011.h" />
+    <ClInclude Include="varianta2-2012.h" />
     <ClInclude Include="varianta2.h" />
     <ClInclude Include="varianta20.h" />
     <ClInclude Include="varianta21.h" />
@@ -201,6 +205,7 @@
     <ClInclude Include="varianta28.h" />
     <ClInclude Include="varianta29.h" />
     <ClInclude Include="varianta3-2008.h" />
+    <ClInclude Include="varianta3-2012.h" />
     <ClInclude Include="varianta3.h" />
     <ClInclude Include="varianta30.h" />
     <ClInclude Include="varianta31.h" />

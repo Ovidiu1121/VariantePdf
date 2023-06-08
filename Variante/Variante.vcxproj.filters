@@ -16,6 +16,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="2011-2019">
+      <UniqueIdentifier>{4331c19b-71ed-460b-ac22-5e87689a4358}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Variante.cpp">
@@ -436,6 +439,21 @@
     </ClInclude>
     <ClInclude Include="varianta5-2008.h">
       <Filter>2008</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2011.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2011.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2012.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2012.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta3-2012.h">
+      <Filter>2011-2019</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

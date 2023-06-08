@@ -1,4 +1,4 @@
-#include "varianta5-2008.h"
+#include "varianta3-2012.h"
 
 
 int main()
@@ -7,7 +7,7 @@ int main()
 
 
 
-	ex4Var5();
+	ex4Var3();
 
 
 
