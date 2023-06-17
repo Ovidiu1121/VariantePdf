@@ -143,10 +143,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="citire_afisare.h" />
+    <ClInclude Include="vaarianta3-2013.h" />
     <ClInclude Include="varianta1-2008.h" />
     <ClInclude Include="varianta1-2009.h" />
     <ClInclude Include="varianta1-2011.h" />
     <ClInclude Include="varianta1-2012.h" />
+    <ClInclude Include="varianta1-2013.h" />
+    <ClInclude Include="varianta1-2014.h" />
     <ClInclude Include="varianta10.h" />
     <ClInclude Include="varianta100.h" />
     <ClInclude Include="varianta101-jitaru.h" />
@@ -193,6 +196,7 @@
     <ClInclude Include="varianta2-2008.h" />
     <ClInclude Include="varianta2-2011.h" />
     <ClInclude Include="varianta2-2012.h" />
+    <ClInclude Include="varianta2-2013.h" />
     <ClInclude Include="varianta2.h" />
     <ClInclude Include="varianta20.h" />
     <ClInclude Include="varianta21.h" />
@@ -218,6 +222,7 @@
     <ClInclude Include="varianta38.h" />
     <ClInclude Include="varianta39.h" />
     <ClInclude Include="varianta4-2008.h" />
+    <ClInclude Include="varianta4-2013.h" />
     <ClInclude Include="varianta4.h" />
     <ClInclude Include="varianta40.h" />
     <ClInclude Include="varianta41.h" />

@@ -455,6 +455,21 @@
     <ClInclude Include="varianta3-2012.h">
       <Filter>2011-2019</Filter>
     </ClInclude>
+    <ClInclude Include="varianta1-2013.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2013.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="vaarianta3-2013.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta4-2013.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2014.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
