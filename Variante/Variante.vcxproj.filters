@@ -485,6 +485,21 @@
     <ClInclude Include="varianta3-2015.h">
       <Filter>2011-2019</Filter>
     </ClInclude>
+    <ClInclude Include="varianta4-2015.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta5-2015.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2016.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2016.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta3-2016.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
