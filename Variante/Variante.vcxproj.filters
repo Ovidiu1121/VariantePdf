@@ -500,6 +500,21 @@
     <ClInclude Include="varianta3-2016.h">
       <Filter>2011-2019</Filter>
     </ClInclude>
+    <ClInclude Include="varianta4-2016.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta5-2016.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-2017.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-2017.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta3-2017.h">
+      <Filter>2011-2019</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">
