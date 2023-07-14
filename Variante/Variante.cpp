@@ -1,4 +1,4 @@
-#include "varianta3-2017.h"
+#include "varianta3-2018.h"
 
 
 int main()
@@ -7,7 +7,7 @@ int main()
 
 
 
-	ex3Var3();
+	ex4Var3();
 
 
 
