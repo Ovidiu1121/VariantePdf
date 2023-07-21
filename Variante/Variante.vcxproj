@@ -153,6 +153,7 @@
     <ClInclude Include="varianta1-2016.h" />
     <ClInclude Include="varianta1-2017.h" />
     <ClInclude Include="varianta1-2018.h" />
+    <ClInclude Include="varianta1-2019.h" />
     <ClInclude Include="varianta10.h" />
     <ClInclude Include="varianta100.h" />
     <ClInclude Include="varianta101-jitaru.h" />
@@ -205,6 +206,7 @@
     <ClInclude Include="varianta2-2016.h" />
     <ClInclude Include="varianta2-2017.h" />
     <ClInclude Include="varianta2-2018.h" />
+    <ClInclude Include="varianta2-2019.h" />
     <ClInclude Include="varianta2.h" />
     <ClInclude Include="varianta20.h" />
     <ClInclude Include="varianta21.h" />
@@ -240,6 +242,7 @@
     <ClInclude Include="varianta4-2015.h" />
     <ClInclude Include="varianta4-2016.h" />
     <ClInclude Include="varianta4-2017.h" />
+    <ClInclude Include="varianta4-2018.h" />
     <ClInclude Include="varianta4.h" />
     <ClInclude Include="varianta40.h" />
     <ClInclude Include="varianta41.h" />
@@ -255,6 +258,7 @@
     <ClInclude Include="varianta5-2015.h" />
     <ClInclude Include="varianta5-2016.h" />
     <ClInclude Include="varianta5-2017.h" />
+    <ClInclude Include="varianta5-2018.h" />
     <ClInclude Include="varianta5.h" />
     <ClInclude Include="varianta50.h" />
     <ClInclude Include="varianta51.h" />
