@@ -1,13 +1,11 @@
-#include "varianta2-2019.h"
+#include "Test3.h"
 
 
 int main()
 {
 
 
-
-
-	ex1Var2();
+	ex3();
 
 
 

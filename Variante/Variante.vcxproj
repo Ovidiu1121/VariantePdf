@@ -143,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="citire_afisare.h" />
+    <ClInclude Include="Test1.h" />
+    <ClInclude Include="Test2.h" />
+    <ClInclude Include="Test3.h" />
     <ClInclude Include="vaarianta3-2013.h" />
     <ClInclude Include="varianta1-2008.h" />
     <ClInclude Include="varianta1-2009.h" />
@@ -154,6 +157,7 @@
     <ClInclude Include="varianta1-2017.h" />
     <ClInclude Include="varianta1-2018.h" />
     <ClInclude Include="varianta1-2019.h" />
+    <ClInclude Include="varianta1-pbinfo.h" />
     <ClInclude Include="varianta10.h" />
     <ClInclude Include="varianta100.h" />
     <ClInclude Include="varianta101-jitaru.h" />
@@ -207,6 +211,7 @@
     <ClInclude Include="varianta2-2017.h" />
     <ClInclude Include="varianta2-2018.h" />
     <ClInclude Include="varianta2-2019.h" />
+    <ClInclude Include="varianta2-pbinfo.h" />
     <ClInclude Include="varianta2.h" />
     <ClInclude Include="varianta20.h" />
     <ClInclude Include="varianta21.h" />

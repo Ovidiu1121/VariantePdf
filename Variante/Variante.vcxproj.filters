@@ -19,6 +19,12 @@
     <Filter Include="2011-2019">
       <UniqueIdentifier>{4331c19b-71ed-460b-ac22-5e87689a4358}</UniqueIdentifier>
     </Filter>
+    <Filter Include="pb-info 2023">
+      <UniqueIdentifier>{e31dbc03-911a-4a72-bb29-782a2b1dddb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="carte-bac2023">
+      <UniqueIdentifier>{f2743683-f306-49f8-85f4-4ae89e266ced}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Variante.cpp">
@@ -541,6 +547,21 @@
     </ClInclude>
     <ClInclude Include="varianta2-2019.h">
       <Filter>2011-2019</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta1-pbinfo.h">
+      <Filter>pb-info 2023</Filter>
+    </ClInclude>
+    <ClInclude Include="varianta2-pbinfo.h">
+      <Filter>pb-info 2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Test1.h">
+      <Filter>carte-bac2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Test2.h">
+      <Filter>carte-bac2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Test3.h">
+      <Filter>carte-bac2023</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
