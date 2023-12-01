@@ -563,6 +563,15 @@
     <ClInclude Include="Test3.h">
       <Filter>carte-bac2023</Filter>
     </ClInclude>
+    <ClInclude Include="Test4.h">
+      <Filter>carte-bac2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Test5.h">
+      <Filter>carte-bac2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Test6.h">
+      <Filter>carte-bac2023</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt">

@@ -146,6 +146,9 @@
     <ClInclude Include="Test1.h" />
     <ClInclude Include="Test2.h" />
     <ClInclude Include="Test3.h" />
+    <ClInclude Include="Test4.h" />
+    <ClInclude Include="Test5.h" />
+    <ClInclude Include="Test6.h" />
     <ClInclude Include="vaarianta3-2013.h" />
     <ClInclude Include="varianta1-2008.h" />
     <ClInclude Include="varianta1-2009.h" />
